@@ -103,17 +103,12 @@
 }{%
   \par\vspace{0.3em}%
 }
-%% -- exam review mode commands --
-\newcommand{\yearlabel}[2][]{\textcolor{supercolor}{\small [#2\u5e74#1]}}
-\newcommand{\seeans}[1]{\textcolor{gray}{\small\uff08\u7b54\u6848\u89c1\u672b\u8282\uff09}}
-\newcommand{\answer}[1]{\vspace{0.5em}\noindent\textcolor{examplecolor}{\textbf{\u7b54\u6848 #1\uff1a}}\normalsize}
-
-%% -- exam review mode commands --
-
-ewcommand{\yearlabel}[2][]{	extcolor{supercolor}{\small [#2年#1]}}
-
-ewcommand{\seeans}[1]{	extcolor{gray}{\small（答案见末节）}}
 
 ewcommand{nswer}[1]{space{0.5em}
 oindent	extcolor{examplecolor}{	extbf{答案 #1：}}
 ormalsize}
+
+%% -- exam review mode commands --
+\newcommand{\yearlabel}[2][]{\textcolor{supercolor}{\small [#2年#1]}}
+\newcommand{\seeans}[1]{\textcolor{gray}{\small（答案见末节）}}
+\newcommand{\answer}[1]{\vspace{0.5em}\noindent\textcolor{examplecolor}{\textbf{答案 #1：}}\normalsize}
