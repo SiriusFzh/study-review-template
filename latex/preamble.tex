@@ -30,6 +30,15 @@
 \usepackage{environ}
 \usepackage{tikz}
 \usetikzlibrary{decorations.pathmorphing,patterns,arrows.meta}
+%% 箭头图标签防重叠样式
+%% 用法：draw[->] (A) -- (B) node[alabel] {条件};
+%%       draw[->] (A) -- (B) node[alabel above] {条件};
+%%       draw[->] (A) -- (B) node[alabel below] {条件};
+\tikzset{
+  alabel/.style={auto, inner sep=2pt, font=\small},
+  alabel above/.style={above, pos=0.4, inner sep=2pt, font=\small},
+  alabel below/.style={below, pos=0.4, inner sep=2pt, font=\small},
+}
 \hypersetup{hidelinks}
 
 %% ── 颜色系统 ──
